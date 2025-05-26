@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage:{
+        circularLight:'repeating-radial-gradient(white 2px, #121212 5px, #121212 100px);'
+      }
     },
   },
   plugins: [],

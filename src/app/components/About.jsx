@@ -5,6 +5,7 @@ import AnimatedText from './AnimatedText';
 import Image from 'next/image';
 import Tilt from 'react-parallax-tilt';
 import { useInView, useSpring, useMotionValue } from 'framer-motion';
+import Skills from './Skills';
 
 
 
@@ -40,7 +41,7 @@ const About = () => {
     <main className='flex w-full flex-col items-center justify-center px-8 pb-5'>
       <span className='pt-16'>
         <AnimatedText
-          text="Human behind the cursor"
+          text="Behind the cursor"
           className="mb-14 text-8xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600"
         />
 
@@ -124,6 +125,8 @@ const About = () => {
 
           </div>
         </div>
+
+        <Skills/>
       </span>
     </main>
   );
