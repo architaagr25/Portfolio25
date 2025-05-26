@@ -27,16 +27,13 @@ const Hero = () => {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className='text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-pink-100'
+              className='text-white'
             />
           
                     </h1>
 
                     <p className='text-[#ADB7BE] text-base  mb-6 sm:text-lg lg:text-xl '>
-                        A passionate Frontend Developer in the making. As a curious engineering student
-                        with a love for clean code and beautiful design, I enjoy
-                        turning ideas into responsive, accessible, and interactive web
-                        experiences. Whether it’s building sleek UIs or exploring the
+                        A passionate Frontend Developer in the making. Whether it’s building sleek UIs or exploring the
                         latest in web technologies, I’m always learning, creating,
                         and improving. Let’s build something great together.
                     </p>
