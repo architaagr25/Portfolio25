@@ -16,9 +16,9 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473595/2_kppnuk.png",
+    title: "Sippify",
     description: "A vibrant and engaging Smoothie Bar website built with ReactJS, Tailwind CSS, and Framer Motion. This project features sleek UI animations and a smooth user experience designed to offer an immersive way for users to explore and interact with the brand.",
-    image: "/images/projects/2.png",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473595/2_kppnuk.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/architaagr25/Sippify.git",
     previewUrl: "https://architaagr25.github.io/Sippify/",

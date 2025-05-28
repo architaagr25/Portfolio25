@@ -53,13 +53,13 @@ const About = () => {
             </h2>
 
             <p className='text-white/80 text-lg'>
-              As a curious engineering student with a love for clean code and beautiful design,
-              I enjoy turning ideas into responsive, accessible, and interactive web experiences.
+              Hi, I'm Archita Agrawal, currently pursuing BTech in Electronics and Communication Technology at IIIT Kota.
+              As a curious student, with a love for clean code and beautiful design, I enjoy turning ideas into responsive, accessible, and interactive web experiences.
             </p>
 
             <p className='my-4 text-white/80 text-lg'>
               Over the past year, I’ve built several frontend projects that reflect my growth
-              in modern technologies like HTML, CSS, JavaScript, React, and animation libraries
+              in modern technologies like HTML, CSS, JavaScript, React, NextJS, and animation libraries
               such as Framer Motion and GSAP.
             </p>
 
