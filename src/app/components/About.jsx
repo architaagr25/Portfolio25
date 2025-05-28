@@ -38,7 +38,7 @@ const AnimatedNumbers = ({value}) => {
 
 const About = () => {
   return (
-    <main className='flex w-full flex-col items-center justify-center px-8 pb-5'>
+    <main id='about' className='flex w-full flex-col items-center justify-center px-8 pb-5'>
       <span className='pt-16'>
         <AnimatedText
           text="Behind the cursor"
