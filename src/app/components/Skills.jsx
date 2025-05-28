@@ -47,7 +47,7 @@ const Skills = () => {
 
                 <Skill name="C++" x="20vw" y="0vw" />
                 <Skill name="Pandas" x="14vw" y="14vw" />
-                <Skill name="Numpy" x="-14vw" y="14vw" />
+                <Skill name="NumPy" x="-14vw" y="14vw" />
                 <Skill name="TypeScript" x="-24vw" y="0vw" />
 
 

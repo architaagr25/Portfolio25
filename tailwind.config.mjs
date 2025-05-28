@@ -14,6 +14,7 @@ export default {
       backgroundImage:{
         circularLight:'repeating-radial-gradient(white 2px, #121212 5px, #121212 100px);'
       }
+
     },
   },
   plugins: [],

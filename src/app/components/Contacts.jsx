@@ -81,7 +81,7 @@ const Contact = () => {
           <img
             src="/images/contact.png"
             alt="Contact illustration"
-            className="max-w-full h-auto rounded-xl shadow-lg"
+            className="max-w-full lg:w-[500px] h-auto rounded-xl "
           />
         </motion.div>
 
@@ -92,7 +92,7 @@ const Contact = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.2, duration: 0.5 }}
           variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}
-          className="basis-1/2"
+          className="basis-1/2 px-5"
         >
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
