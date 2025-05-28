@@ -85,7 +85,7 @@ const About = () => {
 
               
               <Image
-                src="/images/pfp.jpg"
+                src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473647/pfp_tbljdg.jpg"
                 alt="Archita"
                 className="w-full h-auto rounded-2xl"
                 width={400}

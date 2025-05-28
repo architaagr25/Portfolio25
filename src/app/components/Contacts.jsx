@@ -79,7 +79,7 @@ const Contact = () => {
           className="basis-1/2 flex justify-center mb-10 md:mb-0"
         >
           <img
-            src="/images/contact.png"
+            src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473635/contact_nlgc8u.png"
             alt="Contact illustration"
             className="max-w-full lg:w-[500px] h-auto rounded-xl "
           />
