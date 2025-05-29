@@ -1,6 +1,8 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
 const nextConfig = {
-   
-};
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
+}
 
-export default nextConfig;
+export default nextConfig

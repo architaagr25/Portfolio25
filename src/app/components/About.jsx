@@ -1,91 +1,111 @@
 "use client";
 
-import React, {useRef, useEffect} from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import AnimatedText from './AnimatedText';
 import Image from 'next/image';
 import Tilt from 'react-parallax-tilt';
-import { useInView, useSpring, useMotionValue } from 'framer-motion';
+import { motion, useInView, useSpring, useMotionValue } from 'framer-motion';
 import Skills from './Skills';
 
-
-
-const AnimatedNumbers = ({value}) => {
+// Animated counter
+const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
-
   const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, {duration:3000})
-  const isInView = useInView(ref, {once:true});
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
-
-    if(isInView){
+    if (isInView) {
       motionValue.set(value);
     }
-  }, [isInView, value, motionValue])
+  }, [isInView, value, motionValue]);
 
   useEffect(() => {
     springValue.on("change", (latest) => {
-       if(ref.current && latest.toFixed(0) <= value){
+      if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed(0);
-       }
-    })
-  }, [springValue, value])
+      }
+    });
+  }, [springValue, value]);
 
-
-
-  return <span ref={ref}></span>
-}
+  return <span ref={ref}></span>;
+};
 
 const About = () => {
+  const timestamp = Date.now();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <main id='about' className='flex w-full flex-col items-center justify-center px-8 pb-5'>
-      <span className='pt-16'>
+    <main
+      id='about'
+      className='relative flex w-full flex-col items-center justify-center px-4 sm:px-8 pb-10 overflow-hidden'
+    >
+      {/* Background blob effect */}
+      <div className="absolute -z-10 top-[-10%] left-[-10%] w-[300px] h-[300px] bg-purple-600 opacity-30 blur-3xl rounded-full animate-pulse" />
+      <div className="absolute -z-10 bottom-[-10%] right-[-10%] w-[300px] h-[300px] bg-pink-500 opacity-20 blur-3xl rounded-full animate-pulse" />
+
+      {/* Animated Header */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="pt-16"
+      >
         <AnimatedText
           text="Behind the cursor"
-          className="mb-14 text-8xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600"
+          className="mb-14 text-4xl sm:text-6xl lg:text-8xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600 text-center"
         />
+      </motion.div>
 
-        <div className='grid w-full grid-cols-8 gap-16'>
-          {/* Text Section */}
-          <div className='col-span-3 flex flex-col items-start justify-start'>
-            <h2 className='mb-4 text-4xl font-serif font-bold uppercase text-white hover:underline'>
-              About Me
-            </h2>
+      {/* Main Grid */}
+      <div className='grid grid-cols-1 md:grid-cols-8 gap-10 md:gap-16'>
 
-            <p className='text-white/80 text-lg'>
-              Hi, I'm Archita Agrawal, currently pursuing BTech in Electronics and Communication Technology at IIIT Kota.
-              As a curious student, with a love for clean code and beautiful design, I enjoy turning ideas into responsive, accessible, and interactive web experiences.
-            </p>
+        {/* About Text */}
+        <motion.div
+          className='md:col-span-3 flex flex-col items-start'
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className='mb-4 text-3xl md:text-4xl font-serif font-bold uppercase text-white hover:underline'>
+            About Me
+          </h2>
+          <p className='text-white/80 text-base sm:text-lg lg:text-xl'>
+            Hi, I'm Archita Agrawal, currently pursuing BTech in Electronics and Communication at IIIT Kota.
+            I'm passionate about clean code, design, and building sleek, interactive web interfaces.
+          </p>
+          <p className='my-4 text-white/80 text-base sm:text-lg lg:text-xl'>
+            I’ve built projects using HTML, CSS, JavaScript, React, NextJS, and animations with Framer Motion & GSAP.
+          </p>
+          <p className='text-white/80 text-base sm:text-lg lg:text-xl'>
+            Always eager to explore and implement fresh UI trends and motion design in my work.
+          </p>
+        </motion.div>
 
-            <p className='my-4 text-white/80 text-lg'>
-              Over the past year, I’ve built several frontend projects that reflect my growth
-              in modern technologies like HTML, CSS, JavaScript, React, NextJS, and animation libraries
-              such as Framer Motion and GSAP.
-            </p>
-
-            <p className='text-white/80 text-lg'>
-              I'm constantly exploring new frameworks and design trends to sharpen my skills
-              and bring creative concepts to life.
-            </p>
-          </div>
-
-          {/* Tilted 3D Image Section */}
-          <Tilt
-            tiltMaxAngleX={15}
-            tiltMaxAngleY={15}
-            perspective={1000}
-            transitionSpeed={1000}
-            scale={1.05}
-            gyroscope={true}
-            className='col-span-3'
-          >
-            <div className='relative h-max p-3 rounded-2xl border-2 border-black/50 bg-black/50'>
-              
+        {/* Image with glow frame */}
+        <motion.div
+          className='md:col-span-3 flex justify-center relative'
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          {isMobile ? (
+            <div className='relative p-3 rounded-2xl border-2 border-white/30 bg-black/50'>
               <div className='absolute top-2 left-2 w-full h-full rounded-2xl border-8 border-white -z-10'></div>
-
-              
               <Image
-                src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473647/pfp_tbljdg.jpg"
+                src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748533066/pfp_km67vx.jpg?v=${timestamp}"
                 alt="Archita"
                 className="w-full h-auto rounded-2xl"
                 width={400}
@@ -93,41 +113,64 @@ const About = () => {
                 priority
               />
             </div>
-          </Tilt>
+          ) : (
+            <Tilt
+              tiltMaxAngleX={15}
+              tiltMaxAngleY={15}
+              perspective={1000}
+              transitionSpeed={1000}
+              scale={1.05}
+              gyroscope={true}
+            >
+              <div className='relative p-3 rounded-2xl border-2 border-white/30 bg-black/50'>
+                <div className='absolute top-2 left-2 w-full h-full rounded-2xl border-8 border-white -z-10'></div>
+                <Image
+                  src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473647/pfp_tbljdg.jpg"
+                  alt="Archita"
+                  className="w-full h-auto rounded-2xl"
+                  width={400}
+                  height={500}
+                  priority
+                />
+              </div>
+            </Tilt>
+          )}
+        </motion.div>
 
-          <div className='text-white col-span-2 flex flex-col items-end justify-evenly'>
-       <div className=' text-white flex flex-col items-end justify-center'>
-              <span className='inline-block text-7xl font-bold text-white'>
-                <AnimatedNumbers value={20}/>+
+        {/* Stats */}
+        <motion.div
+          className='md:col-span-2 flex flex-col items-center md:items-end justify-evenly gap-8 mt-8 md:mt-0'
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          {[{ label: "Creative Components", val: 20 }, { label: "Projects Completed", val: 5 }, { label: "Lines of Code", val: 500 }].map((stat, idx) => (
+            <div
+              key={idx}
+              className='group relative p-4 bg-gradient-to-br from-purple-600/20 to-pink-500/10 rounded-xl border border-white/20 backdrop-blur-md hover:scale-105 transition-all'
+            >
+              <span className='inline-block text-5xl sm:text-6xl font-bold text-white'>
+                <AnimatedNumbers value={stat.val} />+
               </span>
-              <h2 className='text-xl font-medium capitalize text-white/75'>
-                Creative Components Brought to Life
+              <h2 className='text-base sm:text-lg lg:text-xl font-medium capitalize text-white/70 text-center md:text-right'>
+                {stat.label}
               </h2>
+              <div className="absolute -inset-1 rounded-xl border border-pink-500 opacity-0 group-hover:opacity-50 transition-all"></div>
             </div>
+          ))}
+        </motion.div>
+      </div>
 
-            <div className=' text-white flex flex-col items-end justify-center'>
-              <span className='inline-block text-7xl font-bold'>
-                <AnimatedNumbers value={5}/>+
-              </span>
-              <h2 className='text-xl font-medium capitalize text-white/75'>
-                Projects Completed
-              </h2>
-            </div>
-
-            <div className=' text-white flex flex-col items-end justify-center'>
-              <span className='inline-block text-7xl font-bold'>
-                <AnimatedNumbers value={500}/>+
-              </span>
-              <h2 className='text-xl font-medium capitalize text-white/75'>
-                Lines of Code written
-              </h2>
-            </div>
-
-          </div>
-        </div>
-
-        <Skills/>
-      </span>
+      {/* Skills Section with fade-in */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <Skills />
+      </motion.div>
     </main>
   );
 };
