@@ -60,7 +60,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
             >
               <a
-                href="/resume.pdf"
+                href="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748546096/resume_may2025_lx7uyb.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
