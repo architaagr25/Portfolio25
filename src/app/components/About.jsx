@@ -105,7 +105,7 @@ const About = () => {
             <div className='relative p-3 rounded-2xl border-2 border-white/30 bg-black/50'>
               <div className='absolute top-2 left-2 w-full h-full rounded-2xl border-8 border-white -z-10'></div>
               <Image
-                src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748533066/pfp_km67vx.jpg?v=${timestamp}"
+                src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748533066/pfp_km67vx.jpg?v=${Date.now()}"
                 alt="Archita"
                 className="w-full h-auto rounded-2xl"
                 width={400}
