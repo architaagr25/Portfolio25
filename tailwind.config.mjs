@@ -12,7 +12,7 @@ export default {
         foreground: "var(--foreground)",
       },
      backgroundImage: {
-  circularLight: 'repeating-radial-gradient(circle, white 0 2px, #121212 2px 100px)'
+  circularLight: 'repeating-radial-gradient(circle, white 0 2px, #121212 2px 130px)'
 }
 
 

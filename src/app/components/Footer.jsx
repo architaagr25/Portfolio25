@@ -23,13 +23,13 @@ const Footer = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
-        custom={1}
+        custom={0.5}
       >
         {/* Contact Info */}
         <motion.div
           className="text-center md:text-left"
           variants={fadeIn}
-          custom={2}
+          custom={1}
         >
           <p className="flex items-center justify-center md:justify-start">
             <MdEmail className="mr-2 text-xl" />
@@ -52,7 +52,7 @@ const Footer = () => {
         <motion.div
           className="flex space-x-6"
           variants={fadeIn}
-          custom={3}
+          custom={1.5}
         >
           <a
             href="https://github.com/architaagr25"
@@ -80,7 +80,7 @@ const Footer = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
-        custom={4}
+        custom={2}
       >
         &copy; {new Date().getFullYear()} Archita Agrawal. All rights reserved.
       </motion.div>

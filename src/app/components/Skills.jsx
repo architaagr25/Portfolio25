@@ -55,24 +55,24 @@ const Skills = () => {
   ];
 
   const positions = {
-    HTML: { x: "10vw", y: "0vw" },
-    CSS: { x: "6vw", y: "10vw" },
-    JavaScript: { x: "-6vw", y: "10vw" },
-    ReactJS: { x: "-10vw", y: "0vw" },
-    NextJS: { x: "-14vw", y: "-10vw" },
-    Figma: { x: "-6vw", y: "-14vw" },
-    "Tailwind CSS": { x: "6vw", y: "-14vw" },
-    "Framer-motion": { x: "14vw", y: "-10vw" },
-    GSAP: { x: "0vw", y: "16vw" },
-    "C++": { x: "18vw", y: "0vw" },
-    Pandas: { x: "12vw", y: "12vw" },
-    NumPy: { x: "-12vw", y: "12vw" },
-    TypeScript: { x: "-20vw", y: "0vw" },
+    HTML: { x: "10.5vw", y: "0vw" },
+    CSS: { x: "13vw", y: "9vw" },
+    JavaScript: { x: "-14vw", y: "9vw" },
+    ReactJS: { x: "-10.5vw", y: "0vw" },
+    NextJS: { x: "0vw", y: "-21vw" },
+    Figma: { x: "-12vw", y: "-14vw" },
+    "Tailwind CSS": { x: "0vw", y: "-11vw" },
+    "Framer-motion": { x: "12vw", y: "-14vw" },
+    GSAP: { x: "0vw", y: "18vw" },
+    "C++": { x: "22vw", y: "-9vw" },
+    Pandas: { x: "22vw", y: "5vw" },
+    NumPy: { x: "-22vw", y: "5vw" },
+    TypeScript: { x: "-22vw", y: "-9vw" },
   };
 
   return (
   
-    <div className="relative w-full mt-8 py-20 lg:bg-circularLight min-h-screen"> {/* Added lg:bg-circularLight and min-h-screen here */}
+    <div className="relative w-[100vw] mt-8 py-20 md:bg-circularLight lg:bg-circularLight min-h-screen"> {/* Added lg:bg-circularLight and min-h-screen here */}
       <h2 className='font-bold text-7xl mt-60 w-full font-serif text-center uppercase text-white hover:underline p-2'>Skills</h2>
 
       {/* Desktop Circular Layout */}
@@ -92,7 +92,7 @@ const Skills = () => {
             transition: { duration: 3, repeat: Infinity, ease: "easeInOut" }
           }}
         >
-          <span className="text-xl">{skillIcons["Web"]}</span> Web
+          <span className="text-xl"></span> Web
         </motion.div>
 
         {skills.map((skill, idx) => (
