@@ -39,8 +39,8 @@ const Hero = () => {
           </h1>
 
           <p className='text-[#ADB7BE] text-base mb-6 sm:text-lg lg:text-xl'>
-            A passionate Frontend Developer in the making. Whether it’s building sleek UIs or exploring the
-            latest in web technologies, I’m always learning, creating, and improving. Let’s build something great together.
+           Frontend enthusiast with a flair for sleek designs and smooth interactions. 
+           Always exploring, building, and leveling up. Let’s create something awesome together.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4">

@@ -33,17 +33,8 @@ const projectsData = [
     previewUrl: "https://architaagr25.github.io/TravelNest/",
   },
  
-  {
-    id: 4,
-    title: "Portfolio",
-    description: "A NextJS based portfolio website with a dynamic user interface",
-    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473618/5_dqkj60.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/architaagr25/Portfolio25.git",
-    previewUrl: "/",
-  },
    {
-    id: 5,
+    id: 4,
     title: "Weather-Anywhere",
     description: "This Weather app is a mini HTML, CSS and JavaScript project that allows to check the temperature of any city at any time.",
     image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473609/4_etakcg.png",
@@ -52,7 +43,7 @@ const projectsData = [
     previewUrl: "https://architaagr25.github.io/Weather-Anywhere/",
   },
   {
-    id: 6,
+    id: 5,
     title: "Design-System",
     description: "Reusable component library with React, TypeScript, TailwindCSS and Storybook",
     image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473623/6_x9jodz.png",

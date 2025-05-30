@@ -82,15 +82,15 @@ const About = () => {
             About Me
           </h2>
           <p className='text-white/80 text-base sm:text-lg lg:text-xl'>
-            Hi, I'm Archita Agrawal, currently pursuing BTech in Electronics and Communication at IIIT Kota.
-            I'm passionate about clean code, design, and building sleek, interactive web interfaces.
+            Hi, I'm Archita Agrawal — a B.Tech student in Electronics and Communication at IIIT Kota, with a love for clean code, thoughtful design, and smooth, interactive web experiences.
           </p>
           <p className='my-4 text-white/80 text-base sm:text-lg lg:text-xl'>
-            I’ve built projects using HTML, CSS, JavaScript, React, NextJS, and animations with Framer Motion & GSAP.
+            I work with HTML, CSS, JavaScript, React, Next.js, and bring motion to life using Framer Motion and GSAP.
           </p>
           <p className='text-white/80 text-base sm:text-lg lg:text-xl'>
-            Always eager to explore and implement fresh UI trends and motion design in my work.
+            I’m always exploring new UI trends and finding creative ways to make the web feel a little more alive.
           </p>
+
         </motion.div>
 
         {/* Image with glow frame */}
