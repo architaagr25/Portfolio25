@@ -51,6 +51,7 @@ const projectsData = [
     gitUrl: "https://github.com/architaagr25/design-system.git",
     previewUrl: "https://6814bf75e7c5fedb15352d58-kpltqguaqc.chromatic.com/",
   },
+
 {
     id: 6,
     title: " Solar-System",
@@ -61,6 +62,7 @@ const projectsData = [
     previewUrl: "https://architaagr25.github.io/Solar-system/",
   },
 ];
+
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
