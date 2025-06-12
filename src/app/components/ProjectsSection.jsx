@@ -51,6 +51,15 @@ const projectsData = [
     gitUrl: "https://github.com/architaagr25/design-system.git",
     previewUrl: "https://6814bf75e7c5fedb15352d58-kpltqguaqc.chromatic.com/",
   },
+{
+    id: 6,
+    title: " Solar-System",
+    description: "A 3D solar system implemented using ThreeJs, HTML, CSS and JavaScript. It involves a speed control panel and provides functionality to zoom in and out as required.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1749730091/Untitled_design_kcutq2.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/architaagr25/Solar-system.git",
+    previewUrl: "https://architaagr25.github.io/Solar-system/",
+  },
 ];
 
 const ProjectsSection = () => {
