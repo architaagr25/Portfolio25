@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaMagic } from 'react-icons/fa';
-import { SiNextdotjs, SiFigma, SiTailwindcss, SiFramer, SiCplusplus, SiPandas, SiNumpy, SiTypescript } from 'react-icons/si';
+import { SiNextdotjs, SiFigma, SiTailwindcss, SiFramer, SiCplusplus, SiPandas, SiNumpy, SiTypescript, SiThreejs } from 'react-icons/si';
 
 const skillIcons = {
   HTML: <FaHtml5 className="text-orange-600" />,
@@ -18,7 +18,9 @@ const skillIcons = {
   Pandas: <SiPandas className="text-gray-700" />,
   NumPy: <SiNumpy className="text-blue-800" />,
   TypeScript: <SiTypescript className="text-blue-600" />,
+  "Three.js": <SiThreejs className="text-black" />,
   Web: <FaNodeJs className="text-green-700" />
+
 };
 
 const Skill = ({ name, x, y }) => {
@@ -51,7 +53,7 @@ const Skills = () => {
   const skills = [
     "HTML", "CSS", "JavaScript", "ReactJS", "NextJS",
     "Figma", "Tailwind CSS", "Framer-motion", "GSAP", "C++",
-    "Pandas", "NumPy", "TypeScript",
+    "Pandas", "NumPy", "TypeScript","Three.js",
   ];
 
   const positions = {
@@ -68,6 +70,7 @@ const Skills = () => {
     Pandas: { x: "22vw", y: "5vw" },
     NumPy: { x: "-22vw", y: "5vw" },
     TypeScript: { x: "-22vw", y: "-9vw" },
+    "Three.js": { x: "0vw", y: "-27vw" },
   };
 
   return (
