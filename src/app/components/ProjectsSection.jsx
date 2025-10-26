@@ -61,6 +61,15 @@ const projectsData = [
     gitUrl: "https://github.com/architaagr25/Solar-system.git",
     previewUrl: "https://architaagr25.github.io/Solar-system/",
   },
+  {
+    id: 7,
+    title: " AppDost Clone",
+    description: "A react based website using tailwind css for comprehensive IT solutions. From mobile apps to enterprise software, it brings innovation and excellence to every project with its expert team of developers.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1761485165/Untitled_design_wfzhlj.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/architaagr25/AppDost_clone.git",
+    previewUrl: "https://appdostclone-git-main-archita-agrawals-projects.vercel.app/",
+  },
 ];
 
 
