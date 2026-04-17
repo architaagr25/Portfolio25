@@ -86,7 +86,7 @@ const Skills = () => {
     "Next.js" : { x: "0vw", y: "-23vw" },
      "C++": { x: "-12vw", y: "-14vw" },
       "Tailwind CSS": { x: "0vw", y: "-11vw" }, 
-    "Framer motion": { x: "12vw", y: "4vw" }, 
+    "Framer motion": { x: "12vw", y: "12vw" }, 
     GSAP: { x: "0vw", y: "17vw" }, 
     "Node.js": { x: "22vw", y: "-9vw" },
     "Express.js": { x: "22vw", y: "5vw" }, 
