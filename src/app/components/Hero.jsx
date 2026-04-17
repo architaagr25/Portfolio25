@@ -26,9 +26,11 @@ const Hero = () => {
               sequence={[
                 "Archita",
                 1000,
-                "Frontend Developer",
+                "MERN stack Developer",
                 1000,
                 "Tech Enthusiast",
+                1000,
+                "DSA Enthusiast",
                 1000,
               ]}
               wrapper="span"
@@ -39,8 +41,8 @@ const Hero = () => {
           </h1>
 
           <p className='text-[#ADB7BE] text-base mb-6 sm:text-lg lg:text-xl'>
-           Frontend enthusiast with a flair for sleek designs and smooth interactions. 
-           Always exploring, building, and leveling up. Let’s create something awesome together.
+           Creative and detail-oriented MERN Stack Developer skilled in both frontend and backend development.
+           Adept in building interactive dashboards and looking to contribute to modern, user-focused development teams.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4">

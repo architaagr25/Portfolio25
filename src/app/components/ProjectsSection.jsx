@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
-    id: 1,
+    id: 2,
     title: "Marvel_Universe",
     description: "An interactive Marvel-themed website built using HTML, CSS, Tailwind, and ReactJS. The project is primarily React-based and features a dynamic Hero section, where videos change on-click, along with engaging animations in the subsequent sections.",
     image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473588/1_wjo4bn.png",
@@ -15,7 +15,7 @@ const projectsData = [
     previewUrl: "https://architaagr25.github.io/Marvel_Universe/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Sippify",
     description: "A vibrant and engaging Smoothie Bar website built with ReactJS, Tailwind CSS, and Framer Motion. This project features sleek UI animations and a smooth user experience designed to offer an immersive way for users to explore and interact with the brand.",
     image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473595/2_kppnuk.png",
@@ -24,7 +24,7 @@ const projectsData = [
     previewUrl: "https://architaagr25.github.io/Sippify/",
   },
   {
-    id: 3,
+    id: 4,
     title: "TravelNest",
     description: "A fully responsive and modern travel website built with React.js, Next.js 13, and Tailwind CSS. It features a clean UI/UX design, reusable components, and mobile-friendly layout—perfect for showcasing travel destinations or building a production-ready frontend.",
     image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473602/3_k7xkq9.png",
@@ -34,7 +34,7 @@ const projectsData = [
   },
  
    {
-    id: 4,
+    id: 5,
     title: "Weather-Anywhere",
     description: "This Weather app is a mini HTML, CSS and JavaScript project that allows to check the temperature of any city at any time.",
     image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473609/4_etakcg.png",
@@ -43,7 +43,7 @@ const projectsData = [
     previewUrl: "https://architaagr25.github.io/Weather-Anywhere/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Design-System",
     description: "Reusable component library with React, TypeScript, TailwindCSS and Storybook",
     image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473623/6_x9jodz.png",
@@ -51,7 +51,36 @@ const projectsData = [
     gitUrl: "https://github.com/architaagr25/design-system.git",
     previewUrl: "https://6814bf75e7c5fedb15352d58-kpltqguaqc.chromatic.com/",
   },
+
+{
+    id: 7,
+    title: " Solar-System",
+    description: "A 3D solar system implemented using ThreeJs, HTML, CSS and JavaScript. It involves a speed control panel and provides functionality to zoom in and out as required.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1749730091/Untitled_design_kcutq2.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/architaagr25/Solar-system.git",
+    previewUrl: "https://architaagr25.github.io/Solar-system/",
+  },
+  {
+    id: 8,
+    title: " AppDost Clone",
+    description: "A react based website using tailwind css for comprehensive IT solutions. From mobile apps to enterprise software, it brings innovation and excellence to every project with its expert team of developers.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1761485165/Untitled_design_wfzhlj.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/architaagr25/AppDost_clone.git",
+    previewUrl: "https://appdostclone-git-main-archita-agrawals-projects.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "PawConnect",
+    description: "PawConnect is a community-driven rescue and adoption platform built to give every stray animal a second chance. Citizens report strays with a photo and live location, volunteers coordinate rescues through real-time chat, and adopters can browse rescued animals and apply to give them a forever home — with the entire lifecycle tracked transparently.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/q_auto/f_auto/v1776440034/Untitled_design_1_kvz8sg.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ArchitaAgrawal25/PawConnect.git",
+    previewUrl: "https://pawconnect-bay.vercel.app/",
+  },
 ];
+
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
