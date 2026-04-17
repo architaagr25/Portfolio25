@@ -85,7 +85,7 @@ const About = () => {
             Hi, I'm Archita Agrawal — a B.Tech student in Electronics and Communication at IIIT Kota, with a love for clean code, thoughtful design, and smooth, interactive web experiences.
           </p>
           <p className='my-4 text-white/80 text-base sm:text-lg lg:text-xl'>
-            I work with HTML, CSS, JavaScript, React, Next.js, and bring motion to life using Framer Motion and GSAP.
+            I have strong experience with React.js, Tailwind CSS, Next.js, Express.js, Node.js, and MongoDB, along with animation libraries like GSAP and Framer Motion.
           </p>
           <p className='text-white/80 text-base sm:text-lg lg:text-xl'>
             I’m always exploring new UI trends and finding creative ways to make the web feel a little more alive.
@@ -105,7 +105,7 @@ const About = () => {
             <div className='relative p-3 rounded-2xl border-2 border-white/30 bg-black/50'>
               <div className='absolute top-2 left-2 w-full h-full rounded-2xl border-8 border-white -z-10'></div>
               <Image
-                src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748533066/pfp_km67vx.jpg?v=${Date.now()}"
+                src="https://res.cloudinary.com/dqbhvzioe/image/upload/q_auto/f_auto/v1776445792/pfp_tedpe9.jpg"
                 alt="Archita"
                 className="w-full h-auto rounded-2xl"
                 width={400}
@@ -125,7 +125,7 @@ const About = () => {
               <div className='relative p-3 rounded-2xl border-2 border-white/30 bg-black/50'>
                 <div className='absolute top-2 left-2 w-full h-full rounded-2xl border-8 border-white -z-10'></div>
                 <Image
-                  src="https://res.cloudinary.com/dqbhvzioe/image/upload/v1748533066/pfp_km67vx.jpg?v=${Date.now()}"
+                  src="https://res.cloudinary.com/dqbhvzioe/image/upload/q_auto/f_auto/v1776445792/pfp_tedpe9.jpg"
                   alt="Archita"
                   className="w-full h-auto rounded-2xl"
                   width={400}
