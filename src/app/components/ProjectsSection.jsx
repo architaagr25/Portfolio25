@@ -70,6 +70,15 @@ const projectsData = [
     gitUrl: "https://github.com/architaagr25/AppDost_clone.git",
     previewUrl: "https://appdostclone-git-main-archita-agrawals-projects.vercel.app/",
   },
+  {
+    id: 8,
+    title: "PawConnect",
+    description: "PawConnect is a community-driven rescue and adoption platform built to give every stray animal a second chance. Citizens report strays with a photo and live location, volunteers coordinate rescues through real-time chat, and adopters can browse rescued animals and apply to give them a forever home — with the entire lifecycle tracked transparently.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/q_auto/f_auto/v1776440034/Untitled_design_1_kvz8sg.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ArchitaAgrawal25/PawConnect.git",
+    previewUrl: "https://pawconnect-bay.vercel.app/",
+  },
 ];
 
 
