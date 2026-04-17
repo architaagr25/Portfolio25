@@ -79,19 +79,18 @@ const Skills = () => {
   ];
 
   const positions = {
-    HTML: { x: "10vw", y: "0vw" },
-    CSS: { x: "13vw", y: "9vw" },
-    JavaScript: { x: "-14vw", y: "9vw" },
-    "React.js": { x: "-10vw", y: "0vw" },
-    "Next.js": { x: "0vw", y: "-21vw" },
-    "Tailwind CSS": { x: "0vw", y: "-11vw" },
-    "Framer Motion": { x: "12vw", y: "-14vw" },
-    GSAP: { x: "0vw", y: "18vw" },
-    "C++": { x: "22vw", y: "-9vw" },
-    "Node.js": { x: "-22vw", y: "5vw" },
-    "Express.js": { x: "22vw", y: "5vw" },
-    "MongoDB": { x: "-12vw", y: "-14vw" },
-    "DSA": { x: "0vw", y: "22vw" }
+    HTML: { x: "10.5vw", y: "0vw" },
+    CSS: { x: "13vw", y: "9vw" }, 
+    JavaScript: { x: "-14vw", y: "9vw" }, 
+    "React.js": { x: "-10.5vw", y: "0vw" }, 
+    "Next.js" : { x: "0vw", y: "-21vw" },
+     "C++": { x: "-12vw", y: "-14vw" },
+      "Tailwind CSS": { x: "0vw", y: "-11vw" }, 
+    "Framer motion": { x: "12vw", y: "-14vw" }, 
+    GSAP: { x: "0vw", y: "18vw" }, "Node.js": { x: "22vw", y: "-9vw" },
+    "Express.js": { x: "22vw", y: "5vw" }, 
+    "MongoDB": { x: "-22vw", y: "5vw" },
+     "DSA": { x: "-22vw", y: "-9vw" },
   };
 
   return (
