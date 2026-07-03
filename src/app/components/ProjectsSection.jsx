@@ -6,6 +6,33 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 1,
+    title: "PawConnect",
+    description: "PawConnect is a community-driven rescue and adoption platform built to give every stray animal a second chance. Citizens report strays with a photo and live location, volunteers coordinate rescues through real-time chat, and adopters can browse rescued animals and apply to give them a forever home — with the entire lifecycle tracked transparently.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/q_auto/f_auto/v1776440034/Untitled_design_1_kvz8sg.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ArchitaAgrawal25/PawConnect.git",
+    previewUrl: "https://pawconnect-bay.vercel.app/",
+  },
+  {
+    id: 9,
+    title: "LoanLens",
+    description: "A loan EMI calculator with a real-time shared workspace, every open browser tab stays in sync instantly using the BroadcastChannel API, with amortization schedules, a what-if sensitivity grid, prepayment planning, and cross-tab undo/redo. No server, no polling.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1783053801/Untitled_design_2_x8ibmo.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/architaagr25/loanlens.git",
+    previewUrl: "https://loanlens-ruddy.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "AWS Route 53 clone",
+    description:"A full-stack, responsive clone of the AWS Route 53 console built with Next.js and FastAPI, supporting complete hosted zone management, DNS record CRUD with type-specific validation, and BIND zone file import/export. ",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1783058652/Untitled_design_oikkyh.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/architaagr25/AWS-Route53-Clone.git",
+    previewUrl: " https://aws-route53-clone-rosy.vercel.app/",
+  },
+  {
     id: 2,
     title: "Marvel_Universe",
     description: "An interactive Marvel-themed website built using HTML, CSS, Tailwind, and ReactJS. The project is primarily React-based and features a dynamic Hero section, where videos change on-click, along with engaging animations in the subsequent sections.",
@@ -70,15 +97,7 @@ const projectsData = [
     gitUrl: "https://github.com/architaagr25/AppDost_clone.git",
     previewUrl: "https://appdostclone-git-main-archita-agrawals-projects.vercel.app/",
   },
-  {
-    id: 1,
-    title: "PawConnect",
-    description: "PawConnect is a community-driven rescue and adoption platform built to give every stray animal a second chance. Citizens report strays with a photo and live location, volunteers coordinate rescues through real-time chat, and adopters can browse rescued animals and apply to give them a forever home — with the entire lifecycle tracked transparently.",
-    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/q_auto/f_auto/v1776440034/Untitled_design_1_kvz8sg.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/ArchitaAgrawal25/PawConnect.git",
-    previewUrl: "https://pawconnect-bay.vercel.app/",
-  },
+  
 ];
 
 
