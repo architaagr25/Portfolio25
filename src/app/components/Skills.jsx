@@ -7,7 +7,10 @@ import {
   FaJsSquare,
   FaReact,
   FaNodeJs,
-  FaMagic
+  FaMagic,
+  FaPython,
+  FaGitAlt,
+  FaGithub
 } from 'react-icons/fa';
 
 import {
@@ -16,7 +19,13 @@ import {
   SiFramer,
   SiCplusplus,
   SiMongodb,
-  SiExpress
+  SiExpress,
+  SiPostgresql,
+  SiSocketdotio,
+  SiJsonwebtokens,
+  SiVite,
+  SiChartdotjs,
+  SiMysql
 } from 'react-icons/si';
 
 const skillIcons = {
@@ -28,11 +37,19 @@ const skillIcons = {
   "Tailwind CSS": <SiTailwindcss className="text-sky-400" />,
   "Framer Motion": <SiFramer className="text-purple-600" />,
   "GSAP": <FaMagic className="text-green-600" />,
+  "Vite": <SiVite className="text-purple-500" />,
   "C++": <SiCplusplus className="text-blue-700" />,
+  "Python": <FaPython className="text-yellow-500" />,
+  "SQL": <SiMysql className="text-blue-600" />,
   "Node.js": <FaNodeJs className="text-green-700" />,
   "Express.js": <SiExpress className="text-gray-700" />,
   "MongoDB": <SiMongodb className="text-green-600" />,
-  "DSA": <FaMagic className="text-pink-500" />
+  "PostgreSQL": <SiPostgresql className="text-blue-600" />,
+  "Socket.IO": <SiSocketdotio className="text-black" />,
+  "JWT": <SiJsonwebtokens className="text-pink-600" />,
+  "Git": <FaGitAlt className="text-orange-600" />,
+  "GitHub": <FaGithub className="text-gray-800" />,
+  "Chart.js": <SiChartdotjs className="text-pink-500" />
 };
 
 const Skill = ({ name, x, y }) => {
@@ -40,7 +57,7 @@ const Skill = ({ name, x, y }) => {
     <motion.div
       className='hidden sm:flex items-center gap-2 justify-center rounded-full
         font-semibold bg-white/80 text-black/90 py-2 px-5 text-sm
-        shadow-md cursor-pointer absolute select-none'
+        shadow-md cursor-pointer absolute select-none whitespace-nowrap'
       initial={{ x: 0, y: 0, scale: 1, rotate: 0 }}
       whileInView={{ x, y }}
       viewport={{ once: true }}
@@ -62,41 +79,53 @@ const Skill = ({ name, x, y }) => {
 };
 
 const Skills = () => {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React.js",
-    "Next.js",
-    "Tailwind CSS",
-    "Framer Motion",
-    "GSAP",
-    "C++",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "DSA"
-  ];
+const skills = [
+  "React.js",
+  "Next.js",
+  "JavaScript",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "PostgreSQL",
+  "Tailwind CSS",
+  "HTML",
+  "CSS",
+  "Framer Motion",
+  "GSAP",
+  "Vite",
+  "Socket.IO",
+  "JWT",
+  "C++",
+  "Python",
+  "SQL",
+  "Git",
+  "GitHub",
+  "Chart.js",
+];
 
-  const positions = {
-    HTML: { x: "10.5vw", y: "0vw" },
-    CSS: { x: "13vw", y: "9vw" }, 
-    JavaScript: { x: "-14vw", y: "9vw" }, 
-    "React.js": { x: "-10.5vw", y: "0vw" }, 
-    "Next.js" : { x: "0vw", y: "-21vw" },
-     "C++": { x: "-12vw", y: "-14vw" },
-      "Tailwind CSS": { x: "0vw", y: "-11vw" }, 
-    "Framer Motion": { x: "0vw", y: "11vw" }, 
-    GSAP: { x: "0vw", y: "17vw" }, 
-    "Node.js": { x: "22vw", y: "-9vw" },
-    "Express.js": { x: "22vw", y: "5vw" }, 
-    "MongoDB": { x: "-22vw", y: "5vw" },
-     "DSA": { x: "-22vw", y: "-9vw" },
-  };
+  // Golden-angle spiral layout: radius grows with sqrt(i), angle advances by
+  // the golden angle (~137.5deg) each step. This spacing is mathematically
+  // guaranteed to never overlap, however many skills are added, and scales
+  // itself automatically instead of relying on hand-picked coordinates.
+  const GOLDEN_ANGLE = 137.5;
+  const RADIUS_STEP_X = 6.4; // vw per sqrt-unit of radius
+  const RADIUS_STEP_Y = 4.2; // vw per sqrt-unit of radius (flatter ellipse)
+  const MIN_RADIUS = 9; // vw, keeps first ring clear of the center "Web" node
+
+  const positions = skills.reduce((acc, skill, i) => {
+    const angleRad = (i * GOLDEN_ANGLE * Math.PI) / 180;
+    const radiusFactor = Math.sqrt(i + 1);
+    const rX = MIN_RADIUS + RADIUS_STEP_X * radiusFactor;
+    const rY = MIN_RADIUS * 0.75 + RADIUS_STEP_Y * radiusFactor;
+    acc[skill] = {
+      x: `${(rX * Math.cos(angleRad)).toFixed(2)}vw`,
+      y: `${(rY * Math.sin(angleRad)).toFixed(2)}vw`,
+    };
+    return acc;
+  }, {});
 
   return (
-    <div className="relative w-[100vw] mt-8 py-20 md:bg-circularLight lg:bg-circularLight min-h-screen">
-      
+<div className="relative w-[100vw] mt-8 py-20 pb-40 md:bg-circularLight lg:bg-circularLight min-h-[130vh]">
       <h2 className='font-bold text-7xl mt-60 w-full font-serif text-center uppercase text-white hover:underline p-2'>
         Skills
       </h2>

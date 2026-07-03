@@ -15,6 +15,15 @@ const projectsData = [
     previewUrl: "https://pawconnect-bay.vercel.app/",
   },
   {
+  id: 10,
+  title: "Heart Disease Prediction",
+  description: "A Random Forest model predicting cardiovascular risk, tuned via Grid Search and 5-Fold Cross-Validation to reach 85.87% accuracy and a 0.9167 ROC-AUC score. Research accepted at NIT Patna Conference 2026.",
+  image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1783063406/Untitled_design_1_birmp7.jpg",
+  tag: ["All", "Web"],
+  gitUrl: "https://github.com/jigyasa0712/Heart-Disease-Prediction.git",
+  previewUrl: "#",
+},
+  {
     id: 9,
     title: "LoanLens",
     description: "A loan EMI calculator with a real-time shared workspace, every open browser tab stays in sync instantly using the BroadcastChannel API, with amortization schedules, a what-if sensitivity grid, prepayment planning, and cross-tab undo/redo. No server, no polling.",
