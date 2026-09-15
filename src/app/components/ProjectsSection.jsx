@@ -6,6 +6,15 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 2,
+    title: "Mentora-ai",
+    description: "Mentora AI is a real-time tutoring platform with a Socket.IO pipeline that streams responses word by word, plus a Gemini-powered engine that scores how well someone actually understands a concept, not just whether they got the answer right.",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1789504546/Untitled_design_2_or4yjd.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/architaagr25/mentora-ai.git",
+    previewUrl: "https://mentora-ai-khaki.vercel.app/",
+  },
+  {
     id: 1,
     title: "PawConnect",
     description: "PawConnect is a community-driven rescue and adoption platform built to give every stray animal a second chance. Citizens report strays with a photo and live location, volunteers coordinate rescues through real-time chat, and adopters can browse rescued animals and apply to give them a forever home — with the entire lifecycle tracked transparently.",
@@ -69,34 +78,6 @@ const projectsData = [
     previewUrl: "https://architaagr25.github.io/TravelNest/",
   },
  
-   {
-    id: 5,
-    title: "Weather-Anywhere",
-    description: "This Weather app is a mini HTML, CSS and JavaScript project that allows to check the temperature of any city at any time.",
-    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473609/4_etakcg.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/architaagr25/Weather-Anywhere.git",
-    previewUrl: "https://architaagr25.github.io/Weather-Anywhere/",
-  },
-  {
-    id: 6,
-    title: "Design-System",
-    description: "Reusable component library with React, TypeScript, TailwindCSS and Storybook",
-    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1748473623/6_x9jodz.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/architaagr25/design-system.git",
-    previewUrl: "https://6814bf75e7c5fedb15352d58-kpltqguaqc.chromatic.com/",
-  },
-
-{
-    id: 7,
-    title: " Solar-System",
-    description: "A 3D solar system implemented using ThreeJs, HTML, CSS and JavaScript. It involves a speed control panel and provides functionality to zoom in and out as required.",
-    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1749730091/Untitled_design_kcutq2.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/architaagr25/Solar-system.git",
-    previewUrl: "https://architaagr25.github.io/Solar-system/",
-  },
   {
     id: 8,
     title: " AppDost Clone",
