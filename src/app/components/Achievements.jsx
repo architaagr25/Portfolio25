@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaTrophy, FaUsers, FaCode, FaBookOpen } from "react-icons/fa";
+import { FaTrophy, FaMedal, FaCode, FaBookOpen } from "react-icons/fa";
 import LineGradient from "./LineGradient";
 
 const achievementsData = [
@@ -13,20 +13,20 @@ const achievementsData = [
     link: "https://leetcode.com/u/archita_25/",
   },
   {
+    icon: <FaTrophy className="text-2xl text-yellow-400" />,
+    title: "Competitive Coding",
+    desc: "Competed in 50+ CodeChef contests, earning a peak 2-Star rating; strong background in time-complexity optimization under contest constraints.",
+    link: "https://www.codechef.com/users/archita_25",
+  },
+  {
     icon: <FaBookOpen className="text-2xl text-pink-400" />,
     title: "Research Publication",
     desc: "Peer-reviewed ML paper on cardiovascular risk prediction accepted at NIT Patna Conference 2026.",
   },
   {
-    icon: <FaTrophy className="text-2xl text-yellow-400" />,
-    title: "Competitive Coding",
-    desc: "Competed in 50+ CodeChef contests, earning peak 2-Star rating; strong background in time-complexity optimization under contest constraints.",
-    link: "https://www.codechef.com/users/archita_25",
-  },
-  {
-    icon: <FaUsers className="text-2xl text-purple-400" />,
-    title: "Leadership",
-    desc: "Led a cross-functional team of 8 to organize 3 campus events with 200+ participants each under Odyssey Literary Club, IIIT Kota.",
+    icon: <FaMedal className="text-2xl text-purple-400" />,
+    title: "Hackathon",
+    desc: "Competed as a finalist in Odoo Hackathon 2026 among 800 participants selected out of 20,000+ teams.",
   },
 ];
 
