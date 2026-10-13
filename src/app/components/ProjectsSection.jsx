@@ -9,7 +9,7 @@ const projectsData = [
     id: 2,
     title: "Mentora-ai",
     description: "Mentora AI is a real-time tutoring platform with a Socket.IO pipeline that streams responses word by word, plus a Gemini-powered engine that scores how well someone actually understands a concept, not just whether they got the answer right.",
-    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1789504546/Untitled_design_2_or4yjd.png",
+    image: "https://res.cloudinary.com/dqbhvzioe/image/upload/v1791901902/Untitled_design_2_or4yjd.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/architaagr25/mentora-ai.git",
     previewUrl: "https://mentora-ai-khaki.vercel.app/",
